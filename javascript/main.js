@@ -56,3 +56,34 @@ console.log("hello javascript ");
 // console.log(res);
 
 //
+// write pollyfills for forEach ,map,filter,find,Reduce method
+
+let arr = [2, 4, 8, 5, 10, 12, 15];
+// arr.forEach((currentvalue, index, arr) => {
+//console.log(currentvalue, index, arr);
+//   console.log(currentvalue * 2);
+// });
+
+// Array.prototype.myForEach = function (callback) {
+//   for (let i = 0; i < this.length; i++) {
+//     callback(this[i], i, this);
+//   }
+
+//    console.log(this);
+// };
+
+// arr.myForEach((currentvalue) => {
+//   console.log(currentvalue * 2);
+// });
+// const res = arr.map((item, index, arr) => console.log(item));
+
+// Array.prototype.myMap = function (callback) {
+//   let res = [];
+//   for (let i = 0; i < this.length; i++) {
+//     res.push(callback(this[i], i, this));
+//   }
+// };
+
+// arr.myMap((item, index) => {
+//   console.log(item + 1000, index);
+// });
