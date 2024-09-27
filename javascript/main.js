@@ -110,3 +110,20 @@ let arr = [2, 4, 8, 5, 10, 12, 15];
 // let res = arr.myFilter((item) => item > 5);
 
 // console.log(res);
+
+// pollyfill for find method
+
+// let res = arr.find((item) => item > 5);
+
+// console.log(res);
+
+// Array.prototype.myFind = function (callback) {
+//   for (let i = 0; i < this.length; i++) {
+//     if (callback(this[i], i, this)) return this[i];
+//   }
+
+//   return findData;
+// };
+
+// let res = arr.myFind((item) => item > 5);
+// console.log(res);
