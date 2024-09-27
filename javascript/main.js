@@ -127,3 +127,20 @@ let arr = [2, 4, 8, 5, 10, 12, 15];
 
 // let res = arr.myFind((item) => item > 5);
 // console.log(res);
+//pollyfill for reduce
+
+let result = arr.reduce((accumulator, currentvalue, index, arr) => {
+  return accumulator + currentvalue;
+}, 1);
+console.log(result);
+
+Array.prototype.myreduce = function (callback, initialvalue) {
+  let accumulator = initialvalue;
+  for (let i = 0; i < this.length; i++) {
+    accumulator = callback(accumulator, this[i], i, this);
+  }
+  return accumulator;
+};
+
+let res = arr.myreduce((acc, item) => acc + item, 1);
+console.log(res);
