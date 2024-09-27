@@ -87,3 +87,26 @@ let arr = [2, 4, 8, 5, 10, 12, 15];
 // arr.myMap((item, index) => {
 //   console.log(item + 1000, index);
 // });
+
+//filter
+
+// const res = arr.filter((item) => {
+//   return item > 6;
+// });
+// console.log(res);
+
+//pollyfills
+
+// Array.prototype.myFilter = function (callback) {
+//   let filterData = [];
+//   for (let i = 0; i < this.length; i++) {
+//     if (callback(this[i], i, this)) {
+//       filterData.push(this[i]);
+//     }
+//   }
+//   return filterData;
+// };
+
+// let res = arr.myFilter((item) => item > 5);
+
+// console.log(res);
