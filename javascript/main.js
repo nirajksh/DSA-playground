@@ -129,18 +129,37 @@ let arr = [2, 4, 8, 5, 10, 12, 15];
 // console.log(res);
 //pollyfill for reduce
 
-let result = arr.reduce((accumulator, currentvalue, index, arr) => {
-  return accumulator + currentvalue;
-}, 1);
-console.log(result);
+// let result = arr.reduce((accumulator, currentvalue, index, arr) => {
+//   return accumulator + currentvalue;
+// }, 1);
+// console.log(result);
 
-Array.prototype.myreduce = function (callback, initialvalue) {
-  let accumulator = initialvalue;
-  for (let i = 0; i < this.length; i++) {
-    accumulator = callback(accumulator, this[i], i, this);
-  }
-  return accumulator;
-};
+// Array.prototype.myreduce = function (callback, initialvalue) {
+//   let accumulator = initialvalue;
+//   for (let i = 0; i < this.length; i++) {
+//     accumulator = callback(accumulator, this[i], i, this);
+//   }
+//   return accumulator;
+// };
 
-let res = arr.myreduce((acc, item) => acc + item, 1);
-console.log(res);
+// let res = arr.myreduce((acc, item) => acc + item, 1);
+// console.log(res);
+
+// let result = arr.reduce((accumulator, currentvalue, index, arr) => {
+//   return accumulator + currentvalue;
+// }, 0);
+
+// console.log(result);
+
+// Array.prototype.myReduce = function (callback, initialvalue) {
+//   let reducedData = initialvalue;
+//   for (let i = 0; i < this.length; i++) {
+//     reducedData = callback(reducedData, this[i], i, this);
+//   }
+//   return reducedData;
+// };
+
+// let result = arr.myReduce((accumulator, currentvalue) => {
+//   return accumulator + currentvalue;
+// }, 0);
+// console.log(result);
